@@ -1,9 +1,9 @@
 // Sensor Test Program
 // @date 12/01/16
-// @author Niko Rodriguez
-// Lee DHT22 PIN D53
-// Lee YL-69/YL-38 PIN A9 & D49
-// Lee LDR PIN A8
+// @author niko9797
+// Input DHT22 PIN D53
+// Input YL-69/YL-38 PIN A9 & D49
+// Input LDR PIN A8
 // While is taking lectures, onboard led turns on
 // Connects to pc while usb serial
 
@@ -61,7 +61,7 @@ void setup() {
   dht.temperature().getSensor(&sensor);
   //Serial.println("------------------------------------");
   //Serial.println("-ABP first test program, 12/01/2017-");
-  //Serial.println("           -Made by Afro33-         ");
+  //Serial.println("          -Made by niko9797-        ");
   //Serial.println("------------------------------------");
   //Serial.println("Temperature");
   //Serial.print  ("Sensor:       "); Serial.println(sensor.name);
