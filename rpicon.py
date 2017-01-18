@@ -4,7 +4,7 @@ import time
 from datetime import datetime, date
 
 ser = serial.Serial('/dev/ttyUSB0', 9600)
-db = MySQLdb.connect("localhost", "monitor", "alfaromeo", "prueba1")
+db = MySQLdb.connect("localhost", "monitor", "password", "database")
 mode = 0;
 
 #CREATE TABLE tempdat (date CHAR(12), time CHAR(10) ,info VARCHAR(20), DHTtemp FLOAT, DHThum FLOAT, soilHum SMALLINT, Light SMALLINT);
