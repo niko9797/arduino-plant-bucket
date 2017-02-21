@@ -122,9 +122,8 @@ def ontime1():
     now = datetime.now()
     on1 = now.replace(hour=7, minute=0, second=0, microsecond=0)     # here time when turns on
     off1 = now.replace(hour=23, minute=59, second=0, microsecond=0)  # here time when turns off
-    if now < off1:
-        if now > on1:
-            return True
+    if now < off1 and now > on1:
+        return True
     return False
 
 
@@ -132,9 +131,8 @@ def ontime2():
     now = datetime.now()
     on2 = now.replace(hour=10, minute=0, second=0, microsecond=0)    # here time when turns on
     off2 = now.replace(hour=20, minute=59, second=0, microsecond=0)  # here time when turns off
-    if now < off2:
-        if now > on2:
-            return True
+    if now < off2 and now > on2:
+        return True
     return False
 
 
